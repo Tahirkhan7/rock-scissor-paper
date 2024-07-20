@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Scissor Paper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content1" id="content1">
+        <!-- Section 1 -->
+        <div class="header" id="header">
+          <div class="heading">
+            <p>ROCK<br />PAPER<br />SCISSOR</p>
+          </div>
+          <div class="score">
+            <div class="computer_score">
+              <p class="comp_score_heading">COMPUTER SCORE</p>
+              <p class="comp_score" id="comp_score">0</p>
+            </div>
+            <div class="your_score">
+              <p class="your_score_heading">YOUR SCORE</p>
+              <p class="y_score" id="my_score">0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="page1" id="page1">
+          <!-- Section 2 -->
+          <div class="line top-line"></div>
+          <div class="line left-line"></div>
+          <div class="line right-line"></div>
+          <div class="circle top-left" id="rock"></div>
+          <div class="circle top-right" id="scissor"></div>
+          <div class="circle bottom" id="paper"></div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="rules" id="rules">
+          <div id="rulesList" class="rules_list">
+            <button type="button" class="rules_close" onclick="handleRule()">
+              X
+            </button>
+            <h1 class="rules_heading">Game Rules</h1>
+            <ul class="rules_ul">
+              <li>
+                Rock beats scissors, scissors beat paper, and paper beats rock.
+              </li>
+              <br />
+              <li>
+                Agree ahead of time whether you&apos;ll count off “rock, paper,
+                scissors, shoot” or just “rock, paper, scissors.”
+              </li>
+              <br />
+              <li>
+                Use rock, paper, scissors to settle minor decisions or simply
+                play to pass the time.
+              </li>
+              <br />
+              <li>
+                If both players lay down the same hand, each player lays down
+                another hand.
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="rules_btn"
+            id="rules_btn"
+            onclick="handleRule()"
+          >
+            RULES
+          </button>
+        </div>
+
+        <div class="page2" id="page2">
+          <div class="page2_content" id="page2_content"></div>
+        </div>
+      </div>
+
+      <div class="content2" id="content2">
+        <div class="stars" id="stars" style="display: none"></div>
+        <div class="won_text" id="won_text"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
